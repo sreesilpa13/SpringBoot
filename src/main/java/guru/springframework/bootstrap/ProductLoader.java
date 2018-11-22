@@ -34,7 +34,7 @@ public class ProductLoader implements ApplicationListener<ContextRefreshedEvent>
         shirt.setProductId("235268845711068308");
         productRepository.save(shirt);
 
-        log.info("Additional Saved Shirt - id: " + shirt.getId());
+        log.info("Saved Shirt - id: " + shirt.getId());
 
         Product mug = new Product();
         mug.setDescription("Spring Framework Guru Mug");
