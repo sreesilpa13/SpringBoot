@@ -11,7 +11,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeRequests().antMatchers("/").permitAll().and()
                 .authorizeRequests().antMatchers("/console/**").permitAll();
-        //Hi to all   
+        //Hi to allgit  
         httpSecurity.csrf().disable();
         httpSecurity.headers().frameOptions().disable();
     }
